@@ -36,9 +36,19 @@ const styles = StyleSheet.create({
     buttonLayout: {
         flex: 2,
         alignSelf:"center",
-        justifyContent:"center",
-        paddingHorizontal:30,
-        backgroundColor:"#0000"
+        justifyContent:"center"
+    },
+    buttonDesign: {
+        width: 120,
+        height: 50,
+        borderRadius: 10,
+        borderColor: '#da766b',
+        backgroundColor: '#e01a3c',
+        borderWidth: 1        
+    },
+    buttonTextDesign: {
+        alignSelf:"center",
+        fontWeight: "bold"
     }
 });
 

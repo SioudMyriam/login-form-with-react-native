@@ -3,7 +3,7 @@
  */
 import { StackNavigator } from 'react-navigation';
 import LoginScreen from './components/login';
-import ListScreen from './components/list';
+import HomeScreen from './components/home';
 
 const SomeStack = StackNavigator({
     Login: {
@@ -12,10 +12,10 @@ const SomeStack = StackNavigator({
             title: "login"
         }
     },
-    List: {
-        screen: ListScreen,
+    Home: {
+        screen: HomeScreen,
         navigationOptions: {
-            title: "list"
+            title: "Home"
         }
     }
 
