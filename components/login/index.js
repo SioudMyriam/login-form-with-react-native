@@ -12,7 +12,7 @@ import  {
     TouchableOpacity
 } from  "react-native"
 
-class Login extends Component {
+class LoginScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -27,6 +27,8 @@ class Login extends Component {
             this.setState({
                 error: "Something wrong here!"
             })
+        }else {
+            this.props.navigation.navigate("List", {param:"just a param"})
         }
     }
 
@@ -56,4 +58,4 @@ class Login extends Component {
     }
 }
 
-export  default  Login;
+export  default  LoginScreen;
