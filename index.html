@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    'use strict';
+    let y=5;
+    var x=20;
+    const pi=3.14;
+    var person={
+        name:"Myriam",
+        surname:"SIOUD",
+        hobbies:["reading","playing"],
+        displayName:function(){
+            console.log(this.name + " " + this.surname)
+        }
+    }
+    function test(){
+//delete obj;
+        console.log(x);
+        console.log(pi);
+    }
+
+
+    function add (y=0,x=0) {
+        console.log(x+y);
+    }
+
+    function anyParams(...params){
+        console.log(params);
+    }
+
+    var Lambda = (x) => {
+        x+=7; // x = x +7
+        console.log("I am here" +x)
+    };
+
+    add();
+    test();
+    anyParams(1,2,3,6);
+    Lambda(1);
+    person.displayName();
+
+    var p =person;
+    p.name = "Oussama";
+    p.displayName();
+    console.log(typeof(person));
+
+    var {name}= person;
+    console.log(name);
+
+    var thisIsAString = `the name of the person is ${name}`
+    console.log(thisIsAString);
+
+</script>
+</html>
